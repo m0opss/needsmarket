@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import ReactCardCarousel from "react-card-carousel";
+import PromoCard from '../components/PromoCard';
+import '../../static/styles/Arrow.scss'
 
 
 const promoMass = [{
@@ -16,12 +17,19 @@ const promoMass = [{
     price: '6 780 р.',
     secondPar: 'раздели с другом',
     info: '*Услугой могут воспользоваться несколько человек, услуги деляться между ними.'
+},
+{
+    name: 'Сертификат другу 3',
+    firstPar: 'Професссиональная гигиена полости рта',
+    price: '6 780 р.',
+    secondPar: 'раздели с другом',
+    info: '*Услугой могут воспользоваться несколько человек, услуги деляться между ними.'
 }]
-class MyCarousel extends Component {
+export default class MyCarousel extends Component {
   static get CONTAINER_STYLE() {
     return {
       position: "relative",
-      height: "100vh",
+      height: "500px",
       width: "100%",
       display: "flex",
       flex: 1,
@@ -29,37 +37,37 @@ class MyCarousel extends Component {
       alignItems: "middle"
     };
   }
-
-  static get CARD_STYLE() {
+  static get ARROW_LEFT_STYLE() {
     return {
-      height: "200px",
-      width: "200px",
-      paddingTop: "80px",
-      textAlign: "center",
-      background: "#52C0F5",
-      color: "#FFF",
-      fontFamily: "sans-serif",
-      fontSize: "12px",
-      textTransform: "uppercase",
-      borderRadius: "10px",
-      boxSizing: "border-box"
+      position: "absolute",
+      top: '37%',
+      left: '11%',
+      height: "26px",
+      width: "26px",
+    };
+  }
+  static get ARROW_RIGHT_STYLE() {
+    return {
+        position: "absolute",
+        top: '40%',
+        right: '16%',
+        height: "26px",
+        width: "26px",
     };
   }
 
   render() {
     return (
       <div style={MyCarousel.CONTAINER_STYLE}>
-        <ReactCardCarousel autoplay={false} disable_box_shadow={true}>
-          <div style={MyCarousel.CARD_STYLE}>First Card</div>
-          <div style={MyCarousel.CARD_STYLE}>Second Card</div>
-          <div style={MyCarousel.CARD_STYLE}>Third Card</div>
-          <div style={MyCarousel.CARD_STYLE}>Fourth Card</div>
-          <div style={MyCarousel.CARD_STYLE}>Fifth Card</div>
+        <ReactCardCarousel autoplay={false} disable_box_shadow={true} spread={'wide'} disable_keydown={true} ref={ Carousel => this.Carousel = Carousel }>
+        {promoMass.map((el, index) => (
+                <PromoCard name={el.name} firstPar={el.firstPar} price={el.price} secondPar={el.secondPar} info={el.info} /> 
+            ))}
         </ReactCardCarousel>
+        <img style={MyCarousel.ARROW_LEFT_STYLE} src={'./left-arrow.png'} onClick={() => this.Carousel.prev()} className="arrow-left"/>
+        <img style={MyCarousel.ARROW_RIGHT_STYLE} src={'./right-arrow.png'} onClick={() => this.Carousel.next()} className="arrow-right"/>
       </div>
     );
   }
 }
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<MyCarousel />, rootElement);

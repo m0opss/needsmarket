@@ -6,6 +6,8 @@ import Button from '../components/Button'
 import TopMenu from "../components/TopMenu"
 import { navigate } from "gatsby"
 
+import Slider from '../components/Slider'
+
 
 export default () => {
     return (
@@ -44,7 +46,7 @@ export default () => {
                 </div>
             </div>
             <h1 style={{marginTop: '125px',marginLeft: '153px', fontFamily: 'Podkova',fontStyle: 'normal',fontWeight: 'bold',fontSize: '42px',lineHeight: '47px'}}>Акции</h1>
-            
+            <Slider/>
         </div>
     )
 }

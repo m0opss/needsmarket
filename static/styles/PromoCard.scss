@@ -1,0 +1,52 @@
+.promo-card {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    text-align: start;
+    padding: 26px;
+    background-image: url('../../static/promo-card-background.png');
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 500px;
+    h1 {
+        margin: 0;
+        max-width: 245px;
+        font-family: Podkova;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 47px;
+        color: #1D6ECD;
+    }
+}
+.promo-card_first-paragraph{
+    max-width: 227px;
+    font-family: Podkova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    color: #4E4E4E;
+}
+.promo-card_second-paragraph{
+    margin-bottom: 0;
+    margin-top: 5px;
+    max-width: 227px;
+    font-family: Podkova;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    color: #1E1E1E;
+}
+.promo-card_info{
+    max-width: 227px;
+    font-family: Podkova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #6A6A6A;
+}
