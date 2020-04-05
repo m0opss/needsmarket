@@ -14,9 +14,23 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@material-ui/core": "^4.9.7",
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.45",
+    "gatsby-plugin-sass": "^2.2.1",
+    "gatsby-plugin-styled-components": "^3.2.1",
+    "gatsby-plugin-typography": "^2.4.1",
+    "material-ui": "^0.20.2",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-card-carousel": "^1.1.3",
+    "react-dom": "^16.12.0",
+    "react-typography": "^0.16.19",
+    "styled-components": "^5.0.1",
+    "typography": "^0.16.19",
+    "typography-theme-noriega": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

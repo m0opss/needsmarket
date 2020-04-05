@@ -1,0 +1,29 @@
+.page404-button{
+    display: flex;
+    width: 230px;
+    height: 56px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.page404-button--blue {
+    background-color: #1D6ECD;
+    color: white;
+    &:hover{
+        background-color: #347aca;
+        cursor: pointer;
+    }
+}
+.page404-button--white {
+    background-color: #FFF;
+    color: #1D6ECD;
+    width: 226px;
+    height: 50px;
+    border:  4px solid #1D6ECD;
+    margin-left: 20px;
+    &:hover{
+        background-color: #1D6ECD;
+        color: white;
+        cursor: pointer;
+    }
+}

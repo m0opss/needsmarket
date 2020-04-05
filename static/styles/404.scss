@@ -1,0 +1,57 @@
+.page-404_container {
+    height: 100vh;
+    background: #E6F0FD;
+    display: flex;
+    background-image: url('../../static/404-background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 170px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    p {
+        font-family: Podkova;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.16em;
+        color: #161616;
+        padding-bottom: 16px;
+    }
+    img {
+        max-width: 50px;
+    }
+    @media only screen and (max-width: 1080px) {
+        background-image: none;
+      }
+}
+
+.page-404_info {
+    h1 {
+        font-family: Podkova;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 47px;
+        text-align: center;
+        color: #161616;
+    }
+    p {
+        font-family: Podkova;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #77818E;
+        max-width: 700px;
+    }
+}
+.page-404_buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
