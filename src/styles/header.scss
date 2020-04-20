@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Padauk&display=swap');
+
+* {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.top-menu {
+  background-color: white;
+  height: 50px;
+  width: 100%;
+  margin: 0; 
+  border-bottom: 1px solid #D9D9D9;
+
+  position: fixed;
+  display: flex;
+  list-style: none; 
+  justify-content: space-between;
+  flex-flow: row nowrap;
+
+  position: relative;
+}
+
+.top-menu_item {
+  margin: 0 0;
+  padding:  16px 20px 5px 15px;
+  border-left: 1px solid #D9D9D9;
+
+  & a {
+    display: flex;
+    justify-content: center;
+    color: #919399;
+    text-decoration: none;
+    height: 100%;
+  }
+  & p {
+    padding-left: 10px;
+  }
+
+  &.-logo {
+    padding-top: 6px;
+  }
+}
+
+.top-menu_composition {
+  display: flex;
+}
+
+.-address {
+  max-width: 930px;
+  flex: 5;
+  & a {
+    justify-content: flex-start;
+  }
+}
+

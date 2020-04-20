@@ -1,0 +1,34 @@
+.footer-wrapper {
+  display: flex;
+  height: 50px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  padding-top: 6px;
+  padding-left: 100px;
+}
+
+.store-composition {
+  display: flex;
+  & .apps {
+    width: 120px;
+    height: 35px;
+    background-position: center center;
+    background-size: 112%;
+    background-repeat: no-repeat;
+    border-radius: 7px;
+    margin: 0 30px;
+    cursor: pointer;
+  }
+
+  & .-google {
+    background-image: url('../../static/images/g-app.png');
+  }
+  & .-apple {
+    background-image: url('../../static/images/app-store.png');
+
+  }
+}
