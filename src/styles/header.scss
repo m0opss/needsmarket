@@ -38,6 +38,7 @@
     height: 100%;
   }
   & p {
+    color: #919399;
     padding-left: 10px;
   }
 
@@ -46,9 +47,25 @@
   }
 }
 
+
+
 .top-menu_composition {
   display: flex;
   margin-left: 150px;
+}
+
+button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorInherit {
+  padding: 0;
+  &:hover {
+    background-color: white;
+  }
+}
+div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded {
+  top: 51px !important;
+  width: 20%;
+  left: unset !important;
+  right: 2% !important;
+  transition: 0.6s !important;
 }
 
 .-address {
