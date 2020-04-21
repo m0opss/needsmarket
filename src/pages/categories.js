@@ -17,7 +17,7 @@ export default () => (
         <CategoryItem bgImg='/images/testCategory.png' categoryName='Овощи' count='55'/>
         <CategoryItem bgImg='/images/testCategory.png' categoryName='aaaqqss aaaaaaaasasa' count='55'/>
         <CategoryItem bgImg='/images/testCategory.png' categoryName='О' count='55'/>
-        
+
       </div>
     </div>
   </Layout>

@@ -18,6 +18,17 @@ export default () => (
         <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
         <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
         <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
+        <GoodItem bgImg='/images/testGood.png' goodName='Бананы' price='155'/>
         
       </div>
     </div>
