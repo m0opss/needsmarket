@@ -1,5 +1,11 @@
+.wrapper {
+  width: 100%;
+  background-color: #9FB1AD;
+}
+
 .container {
   max-width: 1366px;
+  width: 90%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

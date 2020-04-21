@@ -7,17 +7,19 @@ import '../styles/categories.scss'
 
 export default () => (
   <Layout>
-    <div className="container">
-      <h1 className="choose">Выберите категорию</h1>
-      <div class="search-item">
-        <label htmlFor="search-item_input">или воспользуйтесь поиском товара:</label>
-        <input type="text" className='search-item_input' placeholder="Введите товар..."/>
-      </div>
-      <div className="items_box">
-        <CategoryItem bgImg='/images/testCategory.png' categoryName='Овощи' count='55'/>
-        <CategoryItem bgImg='/images/testCategory.png' categoryName='aaaqqss aaaaaaaasasa' count='55'/>
-        <CategoryItem bgImg='/images/testCategory.png' categoryName='О' count='55'/>
+    <div className="wrapper">
+      <div className="container">
+        <h1 className="choose">Выберите категорию</h1>
+        <div class="search-item">
+          <label htmlFor="search-item_input">или воспользуйтесь поиском товара:</label>
+          <input type="text" className='search-item_input' placeholder="Введите товар..."/>
+        </div>
+        <div className="items_box">
+          <CategoryItem bgImg='/images/testCategory.png' categoryName='Овощи' count='55'/>
+          <CategoryItem bgImg='/images/testCategory.png' categoryName='aaaqqss aaaaaaaasasa' count='55'/>
+          <CategoryItem bgImg='/images/testCategory.png' categoryName='О' count='55'/>
 
+        </div>
       </div>
     </div>
   </Layout>

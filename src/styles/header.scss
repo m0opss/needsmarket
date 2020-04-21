@@ -18,7 +18,7 @@
   position: fixed;
   display: flex;
   list-style: none; 
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-flow: row nowrap;
 
   position: relative;
@@ -47,6 +47,7 @@
 
 .top-menu_composition {
   display: flex;
+  margin-left: 150px;
 }
 
 .-address {
