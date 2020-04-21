@@ -13,11 +13,10 @@ export default () => (
         <label htmlFor="search-item_input">или воспользуйтесь поиском товара:</label>
         <input type="text" className='search-item_input' placeholder="Введите товар..."/>
       </div>
-      <div className="categories_box">
+      <div className="items_box">
         <CategoryItem bgImg='/images/testCategory.png' categoryName='Овощи' count='55'/>
         <CategoryItem bgImg='/images/testCategory.png' categoryName='aaaqqss aaaaaaaasasa' count='55'/>
         <CategoryItem bgImg='/images/testCategory.png' categoryName='О' count='55'/>
-
         
       </div>
     </div>

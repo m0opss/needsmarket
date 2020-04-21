@@ -3,11 +3,11 @@ import React from "react";
 import '../styles/category_item.scss'
 
 export default (props) => (
-  <div className="item-container">
+  <div className="category-item_container">
     <img src={ props.bgImg } alt=""/>
-    <div className="item-info">
+    <div className="category-item_info">
       <h1>{ props.categoryName }</h1>
-      <div className="count">
+      <div className="category-item_count">
         { props.count } товаров
       </div>
     </div>
