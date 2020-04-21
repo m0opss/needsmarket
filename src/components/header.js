@@ -2,8 +2,23 @@ import React from "react";
 
 import '../styles/header.scss'
 
+
+let prevScrollpos = window.pageYOffset;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("top-menu").style.top = "0";
+  } else {
+    document.getElementById("top-menu").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
 export default () => (
-  <nav className="top-menu">
+  <nav id="top-menu">
 
     <div className="top-menu_item -logo">
       <a href='#'>
